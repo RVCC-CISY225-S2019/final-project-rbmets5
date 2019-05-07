@@ -1,0 +1,379 @@
+body {
+    font-family: 'Bitter', serif;
+    background-color: aliceblue;
+}
+
+img {
+    max-width: 50%;
+
+}
+
+legend {
+    font-size: 1.2em;
+    color: #00008B;
+
+}
+
+button:active {
+    outline: none;
+    background: #000000;
+    color: #ffffff;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+textarea {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1em;
+    background: white;
+    min-width: 100%;
+}
+
+.navbar {
+    background-color: #add8e6;
+    padding-bottom: 1rem;
+}
+
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+}
+
+/* about content */
+
+.about-content {
+    display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+figure {
+    display: grid;
+}
+
+
+/*  article */
+
+article {
+    display: grid;
+}
+
+/* form container */
+.form-container {
+    display: grid;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    .mobile-first {
+        display: none;
+    }
+
+    
+    /*      hero content */
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content picture,
+    .content p,
+    .about-content {
+        grid-column: 2/3;
+    }
+
+    /*	about content */
+
+    /*	gallery */
+
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 1rem;
+    }
+
+
+
+    /*	article */
+    article,
+    .form-container {
+        grid-template-columns: 1fr 48ch 1fr;
+    }
+
+    article h1,
+    .story-body,
+    .form-contaiiner h1,
+    form {
+        grid-column: 2/3;
+    }
+
+    /*	form */
+
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+
+
+    /*      hero content */
+
+    /*	about content */
+
+    /*	gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery h1 {
+        grid-column: 1/4;
+    }
+
+
+
+    /*	article */
+
+    /*	form */
+}
+
+.dropcap:first-child:first-letter {
+    color: navy;
+    float: left;
+    font-family: Georgia;
+    font-size: 5rem;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-weight: bold
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #87ceeb;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;
+}
+
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: black;
+    top: -48px;
+    position: relative;
+    margin-left: 30px;
+
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    animation-name: swirl-in-bck;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    align-items: center;
+}
+
+.square:hover {
+    animation-duration: 1s;
+    animation-play-state: running;
+
+}
+
+.roll-in-left {
+	-webkit-animation: roll-in-left 0.6s ease-out both;
+	        animation: roll-in-left 0.6s ease-out both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-5-7 18:37:43
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation swirl-in-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes swirl-in-bck {
+    0% {
+        -webkit-transform: rotate(540deg) scale(5);
+        transform: rotate(540deg) scale(5);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes swirl-in-bck {
+    0% {
+        -webkit-transform: rotate(540deg) scale(5);
+        transform: rotate(540deg) scale(5);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}

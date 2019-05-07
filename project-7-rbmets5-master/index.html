@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link media="print" rel="stylesheet" href="Print.css">
+</head>
+
+<body>
+    <!-- skip link -->
+    <a href="#main" class="skip">Skip to main</a>
+    <!-- start of header -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+            <a href="#header" class="logo">
+                <div class="logo-container">
+                    <img class="logo" src="images/RBlogo_navy.svg" alt="Logo">
+                    <h1 class="page-title" </h1> </div> </a> <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="#main" class="nav-links">Main</a>
+                        </li>
+                        <li>
+                            <a href="#about-me" class="nav-links">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#pictures" class="nav-links">My Photos</a>
+                        </li>
+                        <li>
+                            <a href="#story" class="nav-links">A Story</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-links">Contact Me</a>
+                        </li>
+                        </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of main content -->
+    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
+    <main id="main" tabindex="-1" class="main">
+        <!-- start of bio section -->
+        <section class="hero">
+            <div class="content">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/sa-lrge.jpg">
+                    <source media="(min-width: 960px)" srcset="images/sa-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/sa-small.jpg">
+                    <img class="my-picture" src="images/sa-xsmall.jpg" alt="This is a picture of me">
+                </picture>
+                <p class="my-name">Robert Brundage</p>
+                <p class="my-location">Washington, NJ</p>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="content">
+                <div class="about-content">
+                    <p class="iama">I want to be...</p>
+                    <p class="my-info">successful in my courses this semester and for the upcoming future plans</p>
+                    <p class="iama">My favorite way to work is...</p>
+                    <p class="my-info">in the morning with music playing.</p>
+                    <p class="iama">In my free time, I like to...</p>
+                    <p class="my-info">Play a game with a friend or my brother, hangout with friends and family, go for a run, listen to music or workout at the gym.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of bio section -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <!-- start of photo gallery -->
+        <section id="pictures" class="gallery">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/stream-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/stream-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/stream-small.jpg">
+                    <img class="pix" src="images/stream-xsmall.jpg" alt="stream">
+                </picture>
+                <figcaption>This is a photo of a stream in PA that leads into Lake WallenPauPack</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/wheel-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/wheel-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/wheel-small.jpg">
+                    <img class="pix" src="images/wheel-xsmall.jpg" alt="Ferris Wheel">
+                </picture>
+                <figcaption>This is a picture of the ferris wheel at knoebels in PA, my family always have a great time whenever we go</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/dragon-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/dragon-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/dragon-small.jpg">
+                    <img class="pix" src="images/dragon-xsmall.jpg" alt="Dragon">
+                </picture>
+                <figcaption>Diagon Alley Universal Orlando</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset=images/elo-lrge.jpg> <source media="(min-width: 960px)" srcset="images/elo-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/elo-small.jpg">
+                    <img class="pix" src="images/elo-xsmall.jpg" alt="elo">
+                </picture>
+                <figcaption>This was an Electric light Orchestra Concert I went to last summer, they put on a crazy light show!</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset=images/montana-lrge.jpg> <source media="(min-width: 960px)" srcset="images/montana-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/montana-small.jpg">
+                    <img class="pix" src="images/montana-xsmall.jpg" alt="montana">
+                </picture>
+                <figcaption>This is a view from the back of my grandfathers cabin over the mountains in Bozemen Montana!</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset=images/sunset-lrge.jpg> <source media="(min-width: 960px)" srcset="images/sunset-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/sunset-small.jpg">
+                    <img class="pix" src="images/sunset-xsmall.jpg" alt="sunset">
+                </picture>
+                <figcaption>Just a gorgeous view waking up first thing in the morning at point pleasant beach at the Jersey shore</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset=images/lake_lrge.jpg> <source media="(min-width: 960px)" srcset="images/lake_med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/lake_small.jpg">
+                    <img class="pix" src="images/lake_xsmall.jpg" alt="Lake">
+                </picture>
+                <figcaption>This is a photo of Lake George in upstate NY</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset=images/guitars-lrge.jpg> <source media="(min-width: 960px)" srcset="images/guitars-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/guitars-small.jpg">
+                    <img class="pix" src="images/guitars-xsmall.jpg" alt="guitars">
+                </picture>
+                <figcaption>This is a photo before the tour of where they make the Martin and Co. Acoustic Guitars out in Pennsylivania!</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset=images/shuttle-lrge.jpg> <source media="(min-width: 960px)" srcset="images/shuttle-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/shuttle-small.jpg">
+                    <img class="pix" src="images/shuttle-xsmall.jpg" alt="shuttle">
+                </picture>
+                <figcaption>This is a photo of one of the lifesize model space shuttles that was used in apollo 11 at the Kennedy Space Center out in Florida!</figcaption>
+            </figure>
+
+
+        </section>
+        <!-- end of photo gallery -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <hr class="mobile-first">
+
+        <article id="story">
+            <div class="svg-wrapper">
+                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="60" width="320" />
+                    <div class="text">CSS Animation</div>
+                    <div></div>
+                </svg>
+            </div>
+            <div class="story-body">
+                <p class="dropcap">
+                    
+                    
+                    
+                </p>
+
+            </div>
+        </article>
+        <div class="square"></div>
+    </main>
+    <!-- end of main content -->
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <hr class="mobile-first">
+    <section id="contact" class="form-container">
+        <h1>Get in Touch</h1>
+        <br class="mobile-first"><br class="mobile-first">
+        <form method="POST" action="https://formspree.io/rbmets5@gmail.com">
+            <fieldset>
+                <legend>Please feel free to contact me</legend>
+
+                <label for="email">please enter your email address</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <p></p>
+                <fieldset>
+                    <legend>I would like a reply</legend>
+                    <input type="radio" name="yes_no" checked>Yes
+                    <br>
+                    <br>
+                    <input type="radio" name="yes_no">No
+
+                </fieldset>
+                <br>
+
+                <label for="message">Leave your message below</label>
+                <br>
+                <textarea name="message" id="message"></textarea>
+                <br>
+                <br>
+                <button class="button" type="submit"><span>Send Message</span></button>
+            </fieldset>
+        </form>
+
+    </section>
+    <!-- end of contact form -->
+    <!-- start of footer -->
+    <footer>
+        <br class="mobile-first"><br class="mobile-first">
+        <div class="content">
+            <p class="copyright">This is my website &copy; 2019</p>
+        </div>
+    </footer>
+    <div cla31ss="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of javascript for nav toggle -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- end of javascript for nav toggle -->
+
+
+
+</body>
+
+</html>
