@@ -12,6 +12,16 @@ picture {
     text-align: center;
 }
 
+.dropcap:first-letter {
+  color: #903;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
 legend {
     font-size: 1.2em;
     color: #00008B;
@@ -139,8 +149,10 @@ footer {
 
     article h1,
     .story-body,
-    .form-contaiiner h1,
-    form {
+    .form-container h1,
+    form,
+    .animation-container,
+    .square {
         grid-column: 2/3;
     }
 
@@ -322,10 +334,15 @@ h6 {
     stroke-dasharray: 760;
 }
 
+.spacer {
+    padding-top: 4rem;
+}
+
 
 .square {
     width: 100px;
     height: 100px;
+    justify-self: center;
     background: skyblue;
     animation-name: swirl-in-bck;
     animation-play-state: paused;
