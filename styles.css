@@ -2,6 +2,9 @@ body {
     font-family: 'Bitter', serif;
     background-color: aliceblue;
 }
+main {
+    outline: none;
+}
 
 img {
     max-width: 50%;
