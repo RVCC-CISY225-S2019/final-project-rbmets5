@@ -8,6 +8,10 @@ img {
 
 }
 
+picture {
+    text-align: center;
+}
+
 legend {
     font-size: 1.2em;
     color: #00008B;
