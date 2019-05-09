@@ -14,3 +14,9 @@ Added an animation box around Text "CSS Animation"
 
 
 Added a button hover animation on "send"
+
+CSS animation sources:
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+http://animista.net/play/entrances/swirl-in/swirl-in-bck
